@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  fetch('/api/test').then((response) => {
+    console.log(response)
+  })
   return (
     <div className="App">
       <header className="App-header">

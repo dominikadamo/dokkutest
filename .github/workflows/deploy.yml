@@ -29,6 +29,8 @@ jobs:
 
     - name: Cloning repo
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: Push webapp to dokku
       uses: dokku/github-action@master
